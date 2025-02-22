@@ -1,0 +1,28 @@
+/* <style> */
+  .footer-bottom {
+  position: relative;
+  background-image: url('/footer.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 1.5rem;
+  text-align: center;
+  color: white; /* Ensures text is readable */
+}
+
+.footer-bottom::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* Adjust the opacity to make it darker */
+  z-index: 0;
+}
+
+.footer-bottom span {
+  position: relative;
+  z-index: 1;
+}
+
+/* </style> */
